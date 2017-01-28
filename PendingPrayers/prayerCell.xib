@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="77" id="KGk-i7-Jjw" customClass="prayerCell" customModule="PendingPrayers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jH-21-8Jr">
+                        <rect key="frame" x="42" y="8" width="184" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40293787770611461" green="0.40444402422375658" blue="0.40896246377668233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-6s-iXN">
+                        <rect key="frame" x="234" y="23" width="78" height="30"/>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.63921568627450975" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="mex-az-sRS"/>
+                        </constraints>
+                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <state key="normal" title="Done">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="doneBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nkv-0Y-sgt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.69059556722640991" green="0.77470016479492188" blue="0.85542058944702148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dik-6s-iXN" secondAttribute="bottom" constant="16" id="3Vt-oB-cnE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6jH-21-8Jr" secondAttribute="bottom" constant="-0.5" id="8ji-JQ-xDw"/>
+                    <constraint firstItem="Dik-6s-iXN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Ex-bN-pMF"/>
+                    <constraint firstItem="Dik-6s-iXN" firstAttribute="leading" secondItem="6jH-21-8Jr" secondAttribute="trailing" constant="8" id="SmD-K8-UGQ"/>
+                    <constraint firstItem="6jH-21-8Jr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="W8m-j2-OEd"/>
+                    <constraint firstItem="Dik-6s-iXN" firstAttribute="leading" secondItem="6jH-21-8Jr" secondAttribute="trailing" constant="8" id="bXI-ut-wtG"/>
+                    <constraint firstItem="6jH-21-8Jr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="34" id="ldJ-JP-7AT"/>
+                    <constraint firstItem="Dik-6s-iXN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="qHW-qE-Jur"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDone" destination="Dik-6s-iXN" id="xcq-Wc-taE"/>
+                <outlet property="lblTitle" destination="6jH-21-8Jr" id="svX-mQ-FzQ"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="68.5"/>
+        </tableViewCell>
+    </objects>
+</document>

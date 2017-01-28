@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD313C08040A1BA9EB5AED1B /* Pods_PendingPrayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745D39E8598A8AA2C7B045AF /* Pods_PendingPrayers.framework */; };
 		E8A11FEC1E35A5E00013A81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A11FEB1E35A5E00013A81F /* AppDelegate.swift */; };
-		E8A11FEE1E35A5E00013A81F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A11FED1E35A5E00013A81F /* ViewController.swift */; };
 		E8A11FF11E35A5E00013A81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A11FEF1E35A5E00013A81F /* Main.storyboard */; };
 		E8A11FF31E35A5E00013A81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A11FF21E35A5E00013A81F /* Assets.xcassets */; };
 		E8A11FF61E35A5E00013A81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A11FF41E35A5E00013A81F /* LaunchScreen.storyboard */; };
+		E8A11FFE1E35AC930013A81F /* PendingPrayerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A11FFD1E35AC930013A81F /* PendingPrayerHomeViewController.swift */; };
+		E8A120011E35AD7E0013A81F /* PrayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A11FFF1E35AD7E0013A81F /* PrayerViewController.swift */; };
+		E8A120021E35AD7E0013A81F /* PrayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A120001E35AD7E0013A81F /* PrayerViewController.xib */; };
+		E8A120051E35AD940013A81F /* DuraionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A120031E35AD940013A81F /* DuraionViewController.swift */; };
+		E8A120061E35AD940013A81F /* DuraionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A120041E35AD940013A81F /* DuraionViewController.xib */; };
+		E8A120091E35ADA50013A81F /* MethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A120071E35ADA50013A81F /* MethodViewController.swift */; };
+		E8A1200A1E35ADA50013A81F /* MethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A120081E35ADA50013A81F /* MethodViewController.xib */; };
+		E8A1200E1E35B3820013A81F /* prayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A1200C1E35B3820013A81F /* prayerCell.swift */; };
+		E8A1200F1E35B3820013A81F /* prayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8A1200D1E35B3820013A81F /* prayerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E2E167FB012D626A271637E /* Pods-PendingPrayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PendingPrayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers.debug.xcconfig"; sourceTree = "<group>"; };
+		745D39E8598A8AA2C7B045AF /* Pods_PendingPrayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PendingPrayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C7A847F896A6555647E64B /* Pods-PendingPrayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PendingPrayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers.release.xcconfig"; sourceTree = "<group>"; };
 		E8A11FE81E35A5E00013A81F /* PendingPrayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PendingPrayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A11FEB1E35A5E00013A81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8A11FED1E35A5E00013A81F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8A11FF01E35A5E00013A81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8A11FF21E35A5E00013A81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8A11FF51E35A5E00013A81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A11FF71E35A5E00013A81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A11FFD1E35AC930013A81F /* PendingPrayerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingPrayerHomeViewController.swift; sourceTree = "<group>"; };
+		E8A11FFF1E35AD7E0013A81F /* PrayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerViewController.swift; sourceTree = "<group>"; };
+		E8A120001E35AD7E0013A81F /* PrayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrayerViewController.xib; sourceTree = "<group>"; };
+		E8A120031E35AD940013A81F /* DuraionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuraionViewController.swift; path = ../DuraionViewController.swift; sourceTree = "<group>"; };
+		E8A120041E35AD940013A81F /* DuraionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DuraionViewController.xib; path = ../DuraionViewController.xib; sourceTree = "<group>"; };
+		E8A120071E35ADA50013A81F /* MethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodViewController.swift; sourceTree = "<group>"; };
+		E8A120081E35ADA50013A81F /* MethodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MethodViewController.xib; sourceTree = "<group>"; };
+		E8A1200C1E35B3820013A81F /* prayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prayerCell.swift; sourceTree = "<group>"; };
+		E8A1200D1E35B3820013A81F /* prayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = prayerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,166 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD313C08040A1BA9EB5AED1B /* Pods_PendingPrayers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017EB28B1E3C94E60005C766 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				017EB2991E3C96050005C766 /* Profile VC */,
+				017EB2981E3C95FA0005C766 /* ChangePassword VC */,
+				017EB2971E3C95EA0005C766 /* ForgetPassword VC */,
+				017EB2961E3C95DA0005C766 /* Signup VC */,
+				017EB2951E3C95CF0005C766 /* Signin VC */,
+				017EB2921E3C95800005C766 /* Prayer VC */,
+				017EB2911E3C95720005C766 /* Duration VC */,
+				017EB2901E3C95570005C766 /* Prayer Parent VC */,
+				017EB2931E3C95970005C766 /* Method */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		017EB28C1E3C95120005C766 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8A11FF21E35A5E00013A81F /* Assets.xcassets */,
+				E8A11FEB1E35A5E00013A81F /* AppDelegate.swift */,
+				E8A11FF71E35A5E00013A81F /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		017EB28D1E3C95280005C766 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		017EB28E1E3C953C0005C766 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				017EB28F1E3C95470005C766 /* TableView */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		017EB28F1E3C95470005C766 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E8A1200C1E35B3820013A81F /* prayerCell.swift */,
+				E8A1200D1E35B3820013A81F /* prayerCell.xib */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		017EB2901E3C95570005C766 /* Prayer Parent VC */ = {
+			isa = PBXGroup;
+			children = (
+				E8A11FFD1E35AC930013A81F /* PendingPrayerHomeViewController.swift */,
+			);
+			name = "Prayer Parent VC";
+			sourceTree = "<group>";
+		};
+		017EB2911E3C95720005C766 /* Duration VC */ = {
+			isa = PBXGroup;
+			children = (
+				E8A120031E35AD940013A81F /* DuraionViewController.swift */,
+				E8A120041E35AD940013A81F /* DuraionViewController.xib */,
+			);
+			name = "Duration VC";
+			sourceTree = "<group>";
+		};
+		017EB2921E3C95800005C766 /* Prayer VC */ = {
+			isa = PBXGroup;
+			children = (
+				E8A11FFF1E35AD7E0013A81F /* PrayerViewController.swift */,
+				E8A120001E35AD7E0013A81F /* PrayerViewController.xib */,
+			);
+			name = "Prayer VC";
+			sourceTree = "<group>";
+		};
+		017EB2931E3C95970005C766 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				E8A120071E35ADA50013A81F /* MethodViewController.swift */,
+				E8A120081E35ADA50013A81F /* MethodViewController.xib */,
+			);
+			name = Method;
+			sourceTree = "<group>";
+		};
+		017EB2941E3C95AF0005C766 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E8A11FEF1E35A5E00013A81F /* Main.storyboard */,
+				E8A11FF41E35A5E00013A81F /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		017EB2951E3C95CF0005C766 /* Signin VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Signin VC";
+			sourceTree = "<group>";
+		};
+		017EB2961E3C95DA0005C766 /* Signup VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Signup VC";
+			sourceTree = "<group>";
+		};
+		017EB2971E3C95EA0005C766 /* ForgetPassword VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ForgetPassword VC";
+			sourceTree = "<group>";
+		};
+		017EB2981E3C95FA0005C766 /* ChangePassword VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ChangePassword VC";
+			sourceTree = "<group>";
+		};
+		017EB2991E3C96050005C766 /* Profile VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Profile VC";
+			sourceTree = "<group>";
+		};
+		0CB078D03AA75BB40B4C73F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745D39E8598A8AA2C7B045AF /* Pods_PendingPrayers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7D1C5CF235E3EB65CA34EE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E2E167FB012D626A271637E /* Pods-PendingPrayers.debug.xcconfig */,
+				84C7A847F896A6555647E64B /* Pods-PendingPrayers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8A11FDF1E35A5DF0013A81F = {
 			isa = PBXGroup;
 			children = (
 				E8A11FEA1E35A5E00013A81F /* PendingPrayers */,
 				E8A11FE91E35A5E00013A81F /* Products */,
+				D7D1C5CF235E3EB65CA34EE7 /* Pods */,
+				0CB078D03AA75BB40B4C73F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +223,21 @@
 		E8A11FEA1E35A5E00013A81F /* PendingPrayers */ = {
 			isa = PBXGroup;
 			children = (
-				E8A11FEB1E35A5E00013A81F /* AppDelegate.swift */,
-				E8A11FED1E35A5E00013A81F /* ViewController.swift */,
-				E8A11FEF1E35A5E00013A81F /* Main.storyboard */,
-				E8A11FF21E35A5E00013A81F /* Assets.xcassets */,
-				E8A11FF41E35A5E00013A81F /* LaunchScreen.storyboard */,
-				E8A11FF71E35A5E00013A81F /* Info.plist */,
+				017EB2941E3C95AF0005C766 /* StoryBoard */,
+				017EB28D1E3C95280005C766 /* Helper */,
+				017EB28C1E3C95120005C766 /* Support Files */,
+				017EB28B1E3C94E60005C766 /* Controllers */,
+				E8A1200B1E35B35F0013A81F /* View */,
 			);
 			path = PendingPrayers;
+			sourceTree = "<group>";
+		};
+		E8A1200B1E35B35F0013A81F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				017EB28E1E3C953C0005C766 /* Cell */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8A11FFA1E35A5E00013A81F /* Build configuration list for PBXNativeTarget "PendingPrayers" */;
 			buildPhases = (
+				2987B0FEE473A324FF6148E4 /* [CP] Check Pods Manifest.lock */,
 				E8A11FE41E35A5DF0013A81F /* Sources */,
 				E8A11FE51E35A5DF0013A81F /* Frameworks */,
 				E8A11FE61E35A5DF0013A81F /* Resources */,
+				9586D778E972B4424563F400 /* [CP] Embed Pods Frameworks */,
+				944FA8CF04525D3F5A493846 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,8 +275,8 @@
 				TargetAttributes = {
 					E8A11FE71E35A5DF0013A81F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ED3RN2VE6B;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7RRU2HJ87M;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,18 +306,74 @@
 				E8A11FF61E35A5E00013A81F /* LaunchScreen.storyboard in Resources */,
 				E8A11FF31E35A5E00013A81F /* Assets.xcassets in Resources */,
 				E8A11FF11E35A5E00013A81F /* Main.storyboard in Resources */,
+				E8A1200F1E35B3820013A81F /* prayerCell.xib in Resources */,
+				E8A120061E35AD940013A81F /* DuraionViewController.xib in Resources */,
+				E8A120021E35AD7E0013A81F /* PrayerViewController.xib in Resources */,
+				E8A1200A1E35ADA50013A81F /* MethodViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2987B0FEE473A324FF6148E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		944FA8CF04525D3F5A493846 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9586D778E972B4424563F400 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8A11FE41E35A5DF0013A81F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A11FEE1E35A5E00013A81F /* ViewController.swift in Sources */,
+				E8A1200E1E35B3820013A81F /* prayerCell.swift in Sources */,
+				E8A120011E35AD7E0013A81F /* PrayerViewController.swift in Sources */,
+				E8A120091E35ADA50013A81F /* MethodViewController.swift in Sources */,
+				E8A11FFE1E35AC930013A81F /* PendingPrayerHomeViewController.swift in Sources */,
 				E8A11FEC1E35A5E00013A81F /* AppDelegate.swift in Sources */,
+				E8A120051E35AD940013A81F /* DuraionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,26 +494,36 @@
 		};
 		E8A11FFB1E35A5E00013A81F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2E167FB012D626A271637E /* Pods-PendingPrayers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ED3RN2VE6B;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7RRU2HJ87M;
 				INFOPLIST_FILE = PendingPrayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.PendingPrayers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "08b8667d-e6d7-4003-8d22-4b56660ba840";
+				PROVISIONING_PROFILE_SPECIFIER = AdHocPrayers;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E8A11FFC1E35A5E00013A81F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C7A847F896A6555647E64B /* Pods-PendingPrayers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ED3RN2VE6B;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 7RRU2HJ87M;
 				INFOPLIST_FILE = PendingPrayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.PendingPrayers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "08b8667d-e6d7-4003-8d22-4b56660ba840";
+				PROVISIONING_PROFILE_SPECIFIER = AdHocPrayers;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +547,7 @@
 				E8A11FFC1E35A5E00013A81F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
