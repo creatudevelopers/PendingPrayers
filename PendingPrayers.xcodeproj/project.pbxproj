@@ -10,6 +10,9 @@
 		011E45731E3E3A5500E88E91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E45721E3E3A5400E88E91 /* LoginViewController.swift */; };
 		017EB29C1E3D89BE0005C766 /* DuraionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EB29A1E3D89BE0005C766 /* DuraionViewController.swift */; };
 		017EB29D1E3D89BE0005C766 /* DuraionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017EB29B1E3D89BE0005C766 /* DuraionViewController.xib */; };
+		01CFBF611E3EE06500662BB4 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF601E3EE06500662BB4 /* RegistrationViewController.swift */; };
+		01CFBF631E3EE0AF00662BB4 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF621E3EE0AF00662BB4 /* ForgetPasswordViewController.swift */; };
+		01CFBF651E3EEA5D00662BB4 /* WebserviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */; };
 		DD313C08040A1BA9EB5AED1B /* Pods_PendingPrayers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745D39E8598A8AA2C7B045AF /* Pods_PendingPrayers.framework */; };
 		E8A11FEC1E35A5E00013A81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A11FEB1E35A5E00013A81F /* AppDelegate.swift */; };
 		E8A11FF11E35A5E00013A81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A11FEF1E35A5E00013A81F /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 		011E45721E3E3A5400E88E91 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		017EB29A1E3D89BE0005C766 /* DuraionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuraionViewController.swift; sourceTree = "<group>"; };
 		017EB29B1E3D89BE0005C766 /* DuraionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuraionViewController.xib; sourceTree = "<group>"; };
+		01CFBF601E3EE06500662BB4 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		01CFBF621E3EE0AF00662BB4 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceHelper.swift; sourceTree = "<group>"; };
 		5E2E167FB012D626A271637E /* Pods-PendingPrayers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PendingPrayers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers.debug.xcconfig"; sourceTree = "<group>"; };
 		745D39E8598A8AA2C7B045AF /* Pods_PendingPrayers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PendingPrayers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C7A847F896A6555647E64B /* Pods-PendingPrayers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PendingPrayers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PendingPrayers/Pods-PendingPrayers.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 		017EB28D1E3C95280005C766 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 		017EB2961E3C95DA0005C766 /* Signup VC */ = {
 			isa = PBXGroup;
 			children = (
+				01CFBF601E3EE06500662BB4 /* RegistrationViewController.swift */,
 			);
 			name = "Signup VC";
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 		017EB2971E3C95EA0005C766 /* ForgetPassword VC */ = {
 			isa = PBXGroup;
 			children = (
+				01CFBF621E3EE0AF00662BB4 /* ForgetPasswordViewController.swift */,
 			);
 			name = "ForgetPassword VC";
 			sourceTree = "<group>";
@@ -373,8 +382,11 @@
 			files = (
 				011E45731E3E3A5500E88E91 /* LoginViewController.swift in Sources */,
 				E8A1200E1E35B3820013A81F /* prayerCell.swift in Sources */,
+				01CFBF611E3EE06500662BB4 /* RegistrationViewController.swift in Sources */,
 				E8A120011E35AD7E0013A81F /* PrayerViewController.swift in Sources */,
+				01CFBF631E3EE0AF00662BB4 /* ForgetPasswordViewController.swift in Sources */,
 				E8A120091E35ADA50013A81F /* MethodViewController.swift in Sources */,
+				01CFBF651E3EEA5D00662BB4 /* WebserviceHelper.swift in Sources */,
 				E8A11FFE1E35AC930013A81F /* PendingPrayerHomeViewController.swift in Sources */,
 				E8A11FEC1E35A5E00013A81F /* AppDelegate.swift in Sources */,
 				017EB29C1E3D89BE0005C766 /* DuraionViewController.swift in Sources */,
@@ -508,8 +520,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "08b8667d-e6d7-4003-8d22-4b56660ba840";
-				PROVISIONING_PROFILE_SPECIFIER = AdHocPrayers;
+				PROVISIONING_PROFILE = "1514f173-e3fb-4760-98bb-5c815345bb0a";
+				PROVISIONING_PROFILE_SPECIFIER = "Ad-Hoc Prayer";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -526,8 +538,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creatudevelopers.prayers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "08b8667d-e6d7-4003-8d22-4b56660ba840";
-				PROVISIONING_PROFILE_SPECIFIER = AdHocPrayers;
+				PROVISIONING_PROFILE = "1514f173-e3fb-4760-98bb-5c815345bb0a";
+				PROVISIONING_PROFILE_SPECIFIER = "Ad-Hoc Prayer";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
