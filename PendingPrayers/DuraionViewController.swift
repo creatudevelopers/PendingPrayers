@@ -33,7 +33,8 @@ class DuraionViewController:  UIViewController,IndicatorInfoProvider {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let daysCount =  UserDefaults.standard.value(forKey: "totalDays") as? String{
+
+        if let daysCount =  UserDefaults.standard.value(forKey: "days") as? String{
            let tDays = Int(daysCount)!
             lblDays.text = "\(tDays % 7)"
             if tDays >= 7{

@@ -1,16 +1,18 @@
 //
-//  ForgetPasswordViewController.swift
+//  ChangePasswordViewController.swift
 //  PendingPrayers
 //
-//  Created by Mohan on 1/30/17.
+//  Created by Mohan Singh Thagunna on 1/30/17.
 //  Copyright © 2017 EBPearls. All rights reserved.
 //
 
 import UIKit
 
-class ForgetPasswordViewController: UIViewController {
+class ChangePasswordViewController: UIViewController {
+    @IBOutlet weak var txtOldPass: UITextField!
+    @IBOutlet weak var txtNewPass: UITextField!
 
-    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtNewPassAgain: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,9 +24,8 @@ class ForgetPasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnCloseTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func btnChangeTapped(_ sender: Any) {
     }
-    @IBAction func btnResettTapped(_ sender: Any) {
-    }
+
+
 }

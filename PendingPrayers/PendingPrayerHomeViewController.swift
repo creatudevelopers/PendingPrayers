@@ -35,6 +35,12 @@ class PendingPrayerHomeViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
         // signUpForNotifications()
     }
+    @IBAction func btnProfileTapped(_ sender: Any) {
+        let pVc = storyboard?.instantiateViewController(withIdentifier: "profileViewController") as! ProfileViewController
+       let _ = self.navigationController?.pushViewController(pVc, animated: true)
+    }
+    @IBAction func btnLogoutTapped(_ sender: Any) {
+    }
     
     // MARK: - PagerTabStripDataSource
     
@@ -45,4 +51,9 @@ class PendingPrayerHomeViewController: ButtonBarPagerTabStripViewController {
         return [child_1, child_2, child_3]
     }
     
+}
+public func AlertDisplayWith(_ title:String?,body:String?,vc:UIViewController){
+    let alert = UIAlertController(title: title, message: body, preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+    vc.present(alert, animated: true, completion: nil)
 }

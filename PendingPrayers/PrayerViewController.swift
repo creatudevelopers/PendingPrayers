@@ -31,11 +31,16 @@ class PrayerViewController:  UIViewController,IndicatorInfoProvider {
     
     override func viewWillAppear(_ animated: Bool) {
          prayerList = prayerListData
-        if let rowValue =  UserDefaults.standard.value(forKey: "selectedRow"){
+        if let rowValue =  UserDefaults.standard.value(forKey: "prayitem"){
             let arrayString = (rowValue as! String).components(separatedBy: ",")
+            if arrayString.count == 6{
             for index in arrayString{
                 let indexValue = Int(index)
                 prayerList[indexValue!]["isDone"] = true
+            }
+            }
+            else{
+                  UserDefaults.standard.removeObject(forKey: "prayitem")
             }
         }
         else{
@@ -75,23 +80,24 @@ extension PrayerViewController:UITableViewDataSource,UITableViewDelegate,prayerC
     }
     
     func selectedRowLimit(index:Int) {
-        if let rowValue =  UserDefaults.standard.value(forKey: "selectedRow"){
+    
+        if let rowValue =  UserDefaults.standard.value(forKey: "prayitem"){
             let arrayString = (rowValue as! String).components(separatedBy: ",")
             if arrayString.count >= prayerList.count{
                 var totalDays = 0
-                let daysCount =  UserDefaults.standard.value(forKey: "totalDays") as? String
+                let daysCount =  UserDefaults.standard.value(forKey: "days") as? String
                 if daysCount == nil{
                     totalDays = 1
                 }
                 else{
                     totalDays = Int(daysCount!)! + 1
                 }
-                UserDefaults.standard.set("\(totalDays)", forKey: "totalDays")
+                UserDefaults.standard.set("\(totalDays)", forKey: "days")
              
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     // do stuff 42 seconds later
                 
-                UserDefaults.standard.removeObject(forKey: "selectedRow")
+                UserDefaults.standard.removeObject(forKey: "prayitem")
                  self.prayerList = self.prayerListData
                 self.tableView.reloadData()
                 }
