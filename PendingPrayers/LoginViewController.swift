@@ -16,6 +16,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let userId = UserDefaults.standard.value(forKey: "userId") as? String{
+            
+        let vc  = self.storyboard?.instantiateViewController(withIdentifier: "homeNav") as! UINavigationController
+        self.present(vc, animated: true, completion: nil)
+        }
     }
 
     @IBAction func btnForgetPasswordTapped(_ sender: Any) {
@@ -33,10 +38,10 @@ class LoginViewController: UIViewController {
             AlertDisplayWith("Pending Prayer", body: "Password required", vc: self)
         }
         else{
-
+            SetAnimation.forDataFetching.startAnimation()
         let webObj = WebserviceHelper()
         webObj.loginUser(["email":txtEmail.text!,"password":txtPassword.text!], comletionHandler: {(userInfo:[String:String]?,errorMessage:String)->Void in
-            //{"userId":"13","name":"mohan singh ","lastname":"thagunna","email":"mohan1234@outlook.com","days":"2","prayitem":"m-m-m"}
+            SetAnimation.forDataFetching.stopAnimation()
             if (userInfo != nil ){
                 UserDefaults.standard.set(userInfo?["userId"], forKey: "userId")
                 UserDefaults.standard.set(userInfo?["name"], forKey: "name")

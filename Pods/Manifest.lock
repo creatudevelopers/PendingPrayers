@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.3.0)
+  - NVActivityIndicatorView (3.2)
+  - XLPagerTabStrip (6.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - NVActivityIndicatorView
+  - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  NVActivityIndicatorView: 28942c18ced111a6a3ce5e6f5b27d9d40116d639
+  XLPagerTabStrip: c46e802a8dcac29edbcea573de8fe920e052455b
+
+PODFILE CHECKSUM: 59e137a5bf8abe1ecc13ec76ed48774ba9ee1b10
+
+COCOAPODS: 1.1.1

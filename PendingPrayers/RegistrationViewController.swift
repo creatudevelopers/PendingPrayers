@@ -33,5 +33,46 @@ class RegistrationViewController: UIViewController {
  
    
     @IBAction func btnSignupTapped(_ sender: Any) {
+        if txtFirstName.text == ""{
+             AlertDisplayWith("Pending Prayer", body: "First Name required", vc: self)
+        }
+        else if txtFirstName.text == ""{
+             AlertDisplayWith("Pending Prayer", body: "Last Name required", vc: self)
+        }
+        else if txtEmail.text == ""{
+            AlertDisplayWith("Pending Prayer", body: "Email required", vc: self)
+        }
+        else if txtPass.text == ""{
+            AlertDisplayWith("Pending Prayer", body: "Password required", vc: self)
+        }
+        else if txtPass.text != txtConfirmPass.text{
+            AlertDisplayWith("Pending Prayer", body: "Password not same", vc: self)
+        }
+            
+        else{
+            
+            let webObj = WebserviceHelper()
+            webObj.signup(["email":txtEmail.text!,"password":txtPass.text!,"lastName":txtFirstName.text!,"name":txtFirstName.text!], comletionHandler: {(userInfo:[String:String]?,errorMessage:String)->Void in
+                
+                if (userInfo != nil ){
+                    UserDefaults.standard.set(userInfo?["userId"], forKey: "userId")
+                    UserDefaults.standard.set(userInfo?["name"], forKey: "name")
+                    UserDefaults.standard.set(userInfo?["lastname"], forKey: "lastname")
+                    UserDefaults.standard.set(userInfo?["email"], forKey: "email")
+                    UserDefaults.standard.set(userInfo?["days"], forKey: "days")
+                    if userInfo?["prayitem"] != ""{
+                        UserDefaults.standard.set(userInfo?["prayitem"], forKey: "prayitem")
+                    }
+                    UserDefaults.standard.synchronize()
+                    let vc  = self.storyboard?.instantiateViewController(withIdentifier: "homeNav") as! UINavigationController
+                    self.present(vc, animated: true, completion: nil)
+                    
+                }
+                else{
+                    //error
+                    AlertDisplayWith("Pending Prayer", body: "Signup Failed", vc: self)
+                }
+            })
+        }
     }
 }

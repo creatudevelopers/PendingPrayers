@@ -12,6 +12,7 @@
 		011E45771E3F830500E88E91 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E45761E3F830500E88E91 /* ChangePasswordViewController.swift */; };
 		017EB29C1E3D89BE0005C766 /* DuraionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017EB29A1E3D89BE0005C766 /* DuraionViewController.swift */; };
 		017EB29D1E3D89BE0005C766 /* DuraionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017EB29B1E3D89BE0005C766 /* DuraionViewController.xib */; };
+		01B576E91E407BD6003DB7B8 /* SetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B576E81E407BD6003DB7B8 /* SetAnimation.swift */; };
 		01CFBF611E3EE06500662BB4 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF601E3EE06500662BB4 /* RegistrationViewController.swift */; };
 		01CFBF631E3EE0AF00662BB4 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF621E3EE0AF00662BB4 /* ForgetPasswordViewController.swift */; };
 		01CFBF651E3EEA5D00662BB4 /* WebserviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */; };
@@ -35,6 +36,7 @@
 		011E45761E3F830500E88E91 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		017EB29A1E3D89BE0005C766 /* DuraionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuraionViewController.swift; sourceTree = "<group>"; };
 		017EB29B1E3D89BE0005C766 /* DuraionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuraionViewController.xib; sourceTree = "<group>"; };
+		01B576E81E407BD6003DB7B8 /* SetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAnimation.swift; sourceTree = "<group>"; };
 		01CFBF601E3EE06500662BB4 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		01CFBF621E3EE0AF00662BB4 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceHelper.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				01CFBF641E3EEA5D00662BB4 /* WebserviceHelper.swift */,
+				01B576E81E407BD6003DB7B8 /* SetAnimation.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				E8A120091E35ADA50013A81F /* MethodViewController.swift in Sources */,
 				011E45751E3F82EC00E88E91 /* ProfileViewController.swift in Sources */,
 				01CFBF651E3EEA5D00662BB4 /* WebserviceHelper.swift in Sources */,
+				01B576E91E407BD6003DB7B8 /* SetAnimation.swift in Sources */,
 				E8A11FFE1E35AC930013A81F /* PendingPrayerHomeViewController.swift in Sources */,
 				011E45771E3F830500E88E91 /* ChangePasswordViewController.swift in Sources */,
 				E8A11FEC1E35A5E00013A81F /* AppDelegate.swift in Sources */,

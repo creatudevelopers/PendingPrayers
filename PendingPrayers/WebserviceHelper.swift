@@ -61,6 +61,52 @@ extension WebserviceHelper{
                 if let statusCode = response.response?.statusCode {
                     switch statusCode {
                     case 200:
+                        debugPrint(response)
+                        let data = resultData as? [String:Any]
+                       
+                        if  let t = data?["status"] as? Int{
+                            if t == 1{
+                            comletionHandler(["ok":"ok"],"")
+                            }
+                            else{
+                                comletionHandler(nil,"")
+                            }
+                        }
+                        else{
+                            comletionHandler(nil,"")
+                        }
+                        break
+                    case 401:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    default:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    }
+                }
+                
+            case .failure(let error):
+                comletionHandler(nil,error.localizedDescription)
+            }
+            
+        })
+    }
+    
+    public func signup(_ params:[String:String] , comletionHandler:@escaping(([String:String]?,_ errorType:String) -> ())){
+        //call the webservice
+        print(params)
+        self.getData(url: URL(string: "http://creatudevelopers.com.np/creatude_webservice1/signup.php")!, method: .post, parameters: params, headers: nil, onCompletion: {
+            response in
+            switch response.result {
+            case .success(let resultData):
+                if let statusCode = response.response?.statusCode {
+                    switch statusCode {
+                    case 200:
+                        debugPrint(response)
                         let data = resultData as! [String:String]
                         if data["status"] == "OK"{
                             comletionHandler(data,"")
@@ -88,5 +134,120 @@ extension WebserviceHelper{
             
         })
     }
+    public func changePass(_ params:[String:String] , comletionHandler:@escaping(([String:String]?,_ errorType:String) -> ())){
+        //call the webservice
+        print(params)
+        self.getData(url: URL(string: "http://creatudevelopers.com.np/creatude_webservice1/signup.php")!, method: .post, parameters: params, headers: nil, onCompletion: {
+            response in
+            switch response.result {
+            case .success(let resultData):
+                if let statusCode = response.response?.statusCode {
+                    switch statusCode {
+                    case 200:
+                        debugPrint(response)
+                        let data = resultData as! [String:String]
+                        if data["status"] == "OK"{
+                            comletionHandler(data,"")
+                        }
+                        else{
+                            comletionHandler(nil,"")
+                        }
+                        break
+                    case 401:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    default:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    }
+                }
+                
+            case .failure(let error):
+                comletionHandler(nil,error.localizedDescription)
+            }
+            
+        })
+    }
+    public func updateProfile(_ params:[String:String] , comletionHandler:@escaping(([String:String]?,_ errorType:String) -> ())){
+        //call the webservice
+        print(params)
+        self.getData(url: URL(string: "http://creatudevelopers.com.np/creatude_webservice1/signup.php")!, method: .post, parameters: params, headers: nil, onCompletion: {
+            response in
+            switch response.result {
+            case .success(let resultData):
+                if let statusCode = response.response?.statusCode {
+                    switch statusCode {
+                    case 200:
+                        debugPrint(response)
+                        let data = resultData as! [String:String]
+                        if data["status"] == "OK"{
+                            comletionHandler(data,"")
+                        }
+                        else{
+                            comletionHandler(nil,"")
+                        }
+                        break
+                    case 401:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    default:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    }
+                }
+                
+            case .failure(let error):
+                comletionHandler(nil,error.localizedDescription)
+            }
+            
+        })
+    }
+    public func forgetPassword(_ params:[String:String] , comletionHandler:@escaping(([String:String]?,_ errorType:String) -> ())){
+        //call the webservice
+        print(params)
+        self.getData(url: URL(string: "http://creatudevelopers.com.np/creatude_webservice1/signup.php")!, method: .post, parameters: params, headers: nil, onCompletion: {
+            response in
+            switch response.result {
+            case .success(let resultData):
+                if let statusCode = response.response?.statusCode {
+                    switch statusCode {
+                    case 200:
+                        debugPrint(response)
+                        let data = resultData as! [String:String]
+                        if data["status"] == "OK"{
+                            comletionHandler(data,"")
+                        }
+                        else{
+                            comletionHandler(nil,"")
+                        }
+                        break
+                    case 401:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    default:
+                        
+                        comletionHandler(nil,"error")
+                        break
+                        
+                    }
+                }
+                
+            case .failure(let error):
+                comletionHandler(nil,error.localizedDescription)
+            }
+            
+        })
+    }
+
 
 }

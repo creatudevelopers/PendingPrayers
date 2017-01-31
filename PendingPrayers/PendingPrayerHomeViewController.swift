@@ -40,6 +40,9 @@ class PendingPrayerHomeViewController: ButtonBarPagerTabStripViewController {
        let _ = self.navigationController?.pushViewController(pVc, animated: true)
     }
     @IBAction func btnLogoutTapped(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "userId")
+        UserDefaults.standard.removeObject(forKey: "prayitem")
+        self.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - PagerTabStripDataSource

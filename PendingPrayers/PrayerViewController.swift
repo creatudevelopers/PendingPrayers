@@ -33,7 +33,7 @@ class PrayerViewController:  UIViewController,IndicatorInfoProvider {
          prayerList = prayerListData
         if let rowValue =  UserDefaults.standard.value(forKey: "prayitem"){
             let arrayString = (rowValue as! String).components(separatedBy: ",")
-            if arrayString.count == 6{
+            if arrayString.count != 6{
             for index in arrayString{
                 let indexValue = Int(index)
                 prayerList[indexValue!]["isDone"] = true
